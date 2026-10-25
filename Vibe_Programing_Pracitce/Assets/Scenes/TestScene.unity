@@ -293,6 +293,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7b1cfd66eda0947a49625f89370d82, type: 3}
+--- !u!114 &387303904 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7000037069341107728, guid: bb7b1cfd66eda0947a49625f89370d82, type: 3}
+  m_PrefabInstance: {fileID: 387303903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39ae4b1d8b4668418df65bdf494a57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HumanController
 --- !u!1 &473422937
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7f412c8ae48214290a179673fce19d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlManager
-  initialTarget: {fileID: 715022226}
+  initialTarget: {fileID: 387303904}
   cameraRig: {fileID: 1792589857}
   move: {fileID: 2890217104213629261, guid: e078f103b0cee1641ac2d67e45587408, type: 3}
   look: {fileID: -1309851403434543700, guid: e078f103b0cee1641ac2d67e45587408, type: 3}
@@ -474,17 +485,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &715022226 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8298705496455889443, guid: 7b0745a3ad39c4b4db76069b7a3eb4c8, type: 3}
-  m_PrefabInstance: {fileID: 1390911283158040473}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd37f6d19c5319c4cbc047dca63eba1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarController
 --- !u!1 &1792589852
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +690,14 @@ PrefabInstance:
     - target: {fileID: 7914261317118143464, guid: 7b0745a3ad39c4b4db76069b7a3eb4c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298705496455889443, guid: 7b0745a3ad39c4b4db76069b7a3eb4c8, type: 3}
+      propertyPath: motorTorque
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298705496455889443, guid: 7b0745a3ad39c4b4db76069b7a3eb4c8, type: 3}
+      propertyPath: parkingBrakeTorque
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
